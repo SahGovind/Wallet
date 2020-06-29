@@ -25,7 +25,7 @@ public class TransactionDetails {
 	}
 
 	@SuppressWarnings("rawtypes")
-	@PostMapping("/transferMoney")
+	@PostMapping("/transferMoney") 
 	public ResponseEntity transferMoney(@RequestBody TransactionDTO transactionDTO) {
 
 		return new ResponseEntity<>(transactionDetailsService.transferMoney(transactionDTO), HttpStatus.OK);

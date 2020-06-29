@@ -34,7 +34,6 @@ public class TransactionDetailsServiceImpl implements TransactionDetailsService 
 			apiOutput.setResponse(wallet);
 			apiOutput.setSuccess(true);
 		} else {
-
 			apiOutput.setResponse("Wallet Account does not exist");
 			apiOutput.setSuccess(true);
 		}
