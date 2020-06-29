@@ -1,7 +1,5 @@
 package com.Ewallet.wallet.restcontroller;
 
-import java.math.BigDecimal;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +15,6 @@ import com.Ewallet.wallet.service.TransactionDetailsService;
 
 @RestController
 public class TransactionDetails {
-
 	@Autowired
 	private TransactionDetailsService transactionDetailsService;
 
@@ -54,5 +51,5 @@ public class TransactionDetails {
 		return new ResponseEntity<>(transactionDetailsService.viewPassBook(mobileNumber), HttpStatus.OK);
 
 	}
-	
+
 }
